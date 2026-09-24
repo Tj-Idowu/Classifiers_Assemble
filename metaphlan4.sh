@@ -2,15 +2,15 @@
 #SBATCH --job-name=metaphlan_analysis
 #SBATCH -t 120:00:00
 #SBATCH --ntasks-per-node 5
-#SBATCH -n 8    ## This is the number of cores that you can specify as --p-threads, and they should be the same
+#SBATCH -n 8
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=olateju.idowu@ucdconnect.ie
+#SBATCH --mail-user=me@email.ie
 
 
 # Set up
-input_dir=/scratch/12355656/Benchmarking/Generator/Metagenomes/Bacillus
-output_dir=/scratch/12355656/Benchmarking/Simulated_Metagenomes/metaphlan_results/Bacillus
-database=/scratch/12355656/Benchmarking/Simulated_Metagenomes/metaphlan_databases
+input_dir=Benchmarking/Generator/Metagenomes/Bacillus
+output_dir=Benchmarking/Simulated_Metagenomes/metaphlan_results/Bacillus
+database=Benchmarking/Simulated_Metagenomes/metaphlan_databases
 in_ext=_R1.fastq.gz
 out_ext=.txt
 bowtie_ext=.bowtie2.bz2
