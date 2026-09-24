@@ -3,7 +3,7 @@
 #SBATCH -t 150:00:00
 #SBATCH --nodelist=sonicmem3
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=olateju.idowu@ucdconnect.ie
+#SBATCH --mail-user=me@email.ie
 
 ## Clean up
 ./clean.sh
