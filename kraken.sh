@@ -2,20 +2,20 @@
 #SBATCH --job-name=kraken2_wastewater
 #SBATCH -t 100:00:00
 #SBATCH --ntasks-per-node 5
-#SBATCH -N 4    ## Only set this if you need more than one node for your job, otherwise this line is not required at all
+#SBATCH -N 4
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=olateju.idowu@ucdconnect.ie
+#SBATCH --mail-user=me@email.ie
 
 # give input and output paths
-input_dir=/scratch/12355656/Benchmarking/Generator/genome
-output_dir=/scratch/12355656/Benchmarking/Simulated_Metagenomes/kraken2_results/
+input_dir=Benchmarking/Generator/genome
+output_dir=Benchmarking/Simulated_Metagenomes/kraken2_results/
 
 # set file extensions
 r1_extension=_R1.fastq
 r2_extension=_R2.fastq
 
 # give database path
-db_path=/scratch/12355656/Benchmarking/Simulated_Metagenomes/k2_standard_08gb_20230314
+db_path=Benchmarking/Simulated_Metagenomes/k2_standard_08gb_20230314
 
 # set input and output file paths and names
 for r1_path in "${input_dir}"/*"${r1_extension}"; do
