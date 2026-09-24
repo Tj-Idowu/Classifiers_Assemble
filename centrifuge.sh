@@ -2,7 +2,7 @@
 #SBATCH --job-name=centrifuge
 #SBATCH -t 200:00:00
 #SBATCH --ntasks-per-node 5
-#SBATCH -N 4    ## Only set this if you need more than one node for your job, otherwise this line is not required at all
+#SBATCH -N 4
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=me@email.ie
 
