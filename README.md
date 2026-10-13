@@ -103,10 +103,10 @@ cd centrifuge/indices
 make p_compressed
 ```
 ### KMA Database
-Select and download the database file from the [KMA and CCMetagen database] (https://figshare.unimelb.edu.au/projects/CCMetagen_databases/195755) choice options.
+Select and download the database file from the [KMA and CCMetagen database](https://figshare.unimelb.edu.au/projects/CCMetagen_databases/195755) choice options.
 
 ### Kraken2 and Bracken Database
-Download database from [https://benlangmead.github.io/aws-indexes/k2] (https://benlangmead.github.io/aws-indexes/k2)
+Download database from [https://benlangmead.github.io/aws-indexes/k2](https://benlangmead.github.io/aws-indexes/k2)
 
 ### MetaPhlAn Database
 Download the database in a folder outside the conda environment.
