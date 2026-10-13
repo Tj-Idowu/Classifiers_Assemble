@@ -1,0 +1,6 @@
+name: nf-kma
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  -kma

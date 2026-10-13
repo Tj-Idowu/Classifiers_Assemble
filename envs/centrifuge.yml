@@ -1,0 +1,6 @@
+name: nf-centrifuge
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - centrifuge

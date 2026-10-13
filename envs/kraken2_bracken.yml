@@ -1,0 +1,7 @@
+name: nf-kraken2-bracken
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - kraken2
+  - bracken

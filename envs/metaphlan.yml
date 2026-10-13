@@ -1,0 +1,6 @@
+name: nf-metaphlan
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - metaphlan
