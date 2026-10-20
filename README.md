@@ -112,5 +112,5 @@ Download database from [https://benlangmead.github.io/aws-indexes/k2](https://be
 Download the database in a folder outside the conda environment.
 
 ```bash
-metaphlan --install --bowtie2db database folder
+metaphlan --install --bowtie2db <database folder>
 ```
