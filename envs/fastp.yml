@@ -1,0 +1,6 @@
+name: nf-fastp
+channels:
+  -bioconda
+  -conda-forge
+dependencies:
+  -fastp

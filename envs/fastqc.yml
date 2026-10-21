@@ -1,0 +1,6 @@
+name: nf-fastqc
+channels:
+  -bioconda
+  -conda-forge
+dependencies:
+  -fastqc
