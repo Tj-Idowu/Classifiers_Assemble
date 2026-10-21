@@ -1,24 +1,34 @@
 # Example: enable only the analyses you want to run.
 outdir: "results"
 
+run_qc: true
+qc_input_dir: "Benchmarking/Generator/Metagenomes/Yersinia"
+qc_r1_suffix: "_R1.fastq.gz"    # optional; defaults to fastq_r1_suffix
+qc_r2_suffix: "_R2.fastq.gz"    # optional; defaults to fastq_r2_suffix
+fastp_qualified_quality: 20
+fastp_length_required: 50
+fastp_other_args: ""
+
 run_blast: true
 blast_input: "Benchmarking/Simulated_Metagenomes/FASTA/*.fasta"
 blast_db: "Benchmarking/Simulated_Metagenomes/BLAST_DB/all_genomes"
 
 run_centrifuge: false
-centrifuge_sample_sheet: "centrifuge_sample-sheet.tsv"
+# centrifuge_input_dir: "Benchmarking/Generator/Metagenomes/Yersinia"     # only used when run_qc is false
 centrifuge_index: "centrifuge_DB/p_compressed"
 
 run_clark: false
-clark_home: "./CLARK"
-clark_read1: "../zero_F.txt"
+clark_db: "./CLARK/CLARK_DB"
+clark_targets: "bacteria"
+clark_rank: "species"
+clark_update_taxonomy: true
+clark_read1: "../zero_F.txt"    # only used when run_qc is false
 clark_read2: "../zero_R.txt"
 clark_sample: "zero"
 
 run_kma: false
 kma_input_dir: "Benchmarking/Generator/Metagenomes/Yersinia"
 kma_db: "Benchmarking/compress_ncbi_nt/ncbi_nt"
-kma_exe: "Benchmarking/Metagenomes/GalwayWW/kma/kma"
 
 run_kraken2: false
 run_bracken: true
@@ -29,7 +39,7 @@ bracken_level: "S"
 bracken_threshold: 100
 
 run_metaphlan: false
-metaphlan_input_dir: "Benchmarking/Generator/Metagenomes/Bacillus"
+metaphlan_input_dir: "Benchmarking/Generator/Metagenomes/Bacillus"    # only when run_qc is false
 metaphlan_glob: "*f2*_R1.fastq.gz"
 metaphlan_suffix: "_R1.fastq.gz"
 metaphlan_db: "Benchmarking/Simulated_Metagenomes/metaphlan_databases"
