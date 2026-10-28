@@ -69,7 +69,7 @@ process FASTP {
     script:
     def other = params.fastp_other_args ?: ''
     """
-    fastp --in1 "${reads}" --in2 "${red2}" --out1 "${sample}_trimmed_R1.fastq.gz" --out2 "${sample}_trimmed_R2.fastq.gz" \\
+    fastp --in1 "${reads}" --in2 "${read2}" --out1 "${sample}_trimmed_R1.fastq.gz" --out2 "${sample}_trimmed_R2.fastq.gz" \\
         --detect_adapter_for_pe \\
         --qualified_quality_phred ${params.fastp_qualified_quality} \\
         --length_required ${params.fastp_length_required} \\
